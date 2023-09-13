@@ -17,12 +17,11 @@ const requestHandler = (req, res) => {
         req.on('data', (chunk) => {
             console.log(chunk);
             body.push(chunk);
-    
         });
         return req.on('end', () =>{
             const parsedBody = Buffer.concat(body).toString();
             const message = parsedBody.split('=')[1];
-            fs.writeFileSync('message.txt', message, (err) => {
+            fs.writeFile('message.txt', message, (err) => {
                 res.statusCode= 302;
                 res.setHeader('Location', '/');
                 return res.end();
@@ -38,4 +37,5 @@ const requestHandler = (req, res) => {
     res.end();    
 };
 
-module.exports = requestHandler;
+exports.handle = requestHandler;
+exports.someText = 'Some hard coded text';
