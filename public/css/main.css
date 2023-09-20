@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+main{
+    padding: 1rem;
+}
+
+.main-header{
+    width: 100%;
+    height: 3.5rem;
+    background-color: #dbc441;
+    padding: 0 1.5rem;
+}
+.main-headerNav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.main-headerItemList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.main-headerItem{
+    padding: 0;
+    margin: 0 1rem;
+}
+.main-headerItem a{
+    text-decoration: none;
+    color: black;
+}
+.main-headerItem a:hover,
+.main-headerItem a:active,
+.main-headerItem a.active{
+    color:  #3e00a1;
+}
