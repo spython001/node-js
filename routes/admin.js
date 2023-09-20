@@ -2,6 +2,8 @@ const router = require('express').Router();
 const path = require('path');
 const rootDir = require('../util/path');
 
+const products = [];
+
 // /admin/add-product => GET request
 router.get('/add-product', (req, res, next) => {
     res.sendFile(path.join(rootDir, 'views', 'add-product.html'));

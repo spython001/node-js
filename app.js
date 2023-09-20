@@ -6,6 +6,7 @@ const shopRoute = require('./routes/shop');
 const path = require('path');
 const rootDir = require('./util/path')
 
+
 //MIDDLEWARE
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -18,5 +19,5 @@ app.use('/', (req, res, next) => {
 });
 
 app.listen(3000, ()=> {
-    console.log('Backend Server is runing ...')
+    console.log('Backend Server is running ...')
 });
