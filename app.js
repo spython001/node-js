@@ -14,7 +14,8 @@ app.set('views', 'views');
 //USING 'HANDLEBARS TEMPLATE ENGINE
 app.engine('.hbs', expressHbs.engine({
     extname: ".hbs",
-    defaultLayout: false
+    layoutsDir: 'views/layouts/',
+    defaultLayout: 'main-layouts'
   }));
 app.set('view engine', 'hbs');
 app.set('views', 'views');
