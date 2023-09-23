@@ -8,8 +8,8 @@ const rootDir = require('./util/path')
 const expressHbs = require('express-handlebars');
 
 //USING 'PUG' TEMPLATE ENGINE
-//app.set('view engine', 'pug');
-//app.set('views', 'views');
+app.set('view engine', 'pug');
+app.set('views', 'views');
 
 //USING 'HANDLEBARS TEMPLATE ENGINE
 app.engine('.hbs', expressHbs.engine({
