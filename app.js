@@ -6,6 +6,9 @@ const shopRoute = require('./routes/shop');
 const path = require('path');
 const rootDir = require('./util/path')
 
+//USING 'PUG' TEMPLATE ENGINE
+app.set('view engine', 'pug');
+app.set('views', 'views');
 
 //MIDDLEWARE
 app.use(bodyParser.urlencoded({ extended: false }));
