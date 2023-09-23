@@ -8,11 +8,11 @@ html(lang="en")
         link(rel="stylesheet", href="/css/main.css")
     body 
         header.main-header
-            nav.main-header__Nav
-                ul.main-headerItemList
-                    li.main-headerItem
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
                         a.active(href="/") Shop
-                    li.main-headerItem
+                    li.main-header__item
                         a(href="/admin/add-product") Add Product
 
         main
@@ -23,7 +23,7 @@ html(lang="en")
                         header.card__header
                             h1.product__title #{product.title}
                         div.card__image
-                            img(src="image.png", alt="A Book")
+                            img(src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3BlbiUyMGJvb2t8ZW58MHx8MHx8fDA%3D&w=1000&q=80", alt="A Book")
                         div.card__content
                             h2.product__price $19.99
                             p.product__description A very interesting book about so many even more interesting things!
