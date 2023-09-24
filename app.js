@@ -20,6 +20,10 @@ app.engine('.hbs', expressHbs.engine({
 app.set('view engine', 'hbs');
 app.set('views', 'views');
 
+//USING 'EJS' TEMPLATE ENGINE
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
 //MIDDLEWARE
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
